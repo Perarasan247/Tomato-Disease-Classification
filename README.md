@@ -11,6 +11,7 @@ A complete web application was also built with:
 
 
 🛠️ Tech Stack
+
 Deep Learning: PyTorch, EfficientNet
 
 Backend: FastAPI
