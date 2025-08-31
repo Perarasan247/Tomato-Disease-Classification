@@ -1,0 +1,41 @@
+<!-- frontend/index.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Tomato Disease Classifier</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="./styles.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="container">
+    <h1>🍅 Tomato Disease Classifier</h1>
+    <p>Drag & drop a tomato leaf image, or click to select. The model will predict if it’s healthy, or show the disease name.</p>
+
+    <div id="dropzone" class="dropzone">
+      <input id="fileInput" type="file" accept="image/*" hidden />
+      <div id="dzText">Drop image here, or click to upload</div>
+      <img id="preview" class="preview" alt="preview" />
+    </div>
+
+    <button id="predictBtn" class="btn" disabled>Predict</button>
+
+    <div id="status" class="status"></div>
+
+    <div id="result" class="card hidden">
+      <h2 id="predLabel"></h2>
+      <div id="healthyTag" class="tag"></div>
+      <h3>Top Predictions</h3>
+      <div id="topk"></div>
+      <h3>All Class Probabilities</h3>
+      <div id="probs"></div>
+    </div>
+
+    <footer>
+      <a href="/api" target="_blank">API Docs</a>
+    </footer>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
