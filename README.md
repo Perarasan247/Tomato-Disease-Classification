@@ -26,3 +26,7 @@ Other Tools: scikit-learn, tqdm, joblib
 Deploy on cloud (AWS/GCP/Azure)
 
 Add real-time mobile app inference
+
+**## 🎥 Demo Video
+
+[![Watch the demo](https://img.shields.io/badge/▶️-Watch%20Demo%20Video-red)](TDC.mp4)**
